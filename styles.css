@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    font-family: Arial, sans-serif; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    background-color: white;
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    max-width: 400px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+input {
+    width: calc(100% - 40px); 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    width: calc(100% - 40px);
+    padding: 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px; 
+}
+
+button:hover {
+    background-color: #45a049; 
+}
+
+.signup-message {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signup-message a {
+    color: #4CAF50; 
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+.signup-message a:hover {
+    text-decoration: underline; 
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .login-box {
+        padding: 15px; 
+    }
+
+    input {
+        padding: 15px; 
+        margin-bottom: 15px; 
+    }
+
+    button {
+        padding: 15px; 
+        font-size: 14px;
+    }
+
+    .signup-message {
+        font-size: 12px; 
+    }
+}
